@@ -107,18 +107,18 @@ const MasterLayout = ({ children }) => {
         <div>
           <Link to='/' className='sidebar-logo'>
             <img
-              src='assets/images/logo.png'
-              alt='site logo'
+              src=''
+              alt=''
               className='light-logo'
             />
             <img
-              src='assets/images/logo-light.png'
-              alt='site logo'
+              src=''
+              alt=''
               className='dark-logo'
             />
             <img
-              src='assets/images/logo-icon.png'
-              alt='site logo'
+              src=''
+              alt=''
               className='logo-icon'
             />
           </Link>
