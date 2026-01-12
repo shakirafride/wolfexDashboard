@@ -9,8 +9,20 @@ export default defineConfig({
     open: true
   },
   build: {
-    outDir: 'build',
-    sourcemap: true
+    outDir: 'dist',
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom'],
+          charts: ['react-apexcharts', 'apexcharts'],
+          ui: ['bootstrap', '@iconify/react'],
+          utils: ['lodash-es', 'clsx']
+        }
+      }
+    },
+    chunkSizeWarningLimit: 1000
   },
   define: {
     global: 'globalThis',
