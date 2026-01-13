@@ -10,7 +10,7 @@ const Metrics = () => {
                 <h6 className="text-lg fw-semibold mb-0">Metrics</h6>
             </div>
             <div className="card-body p-24">
-                <div className="row row-cols-xxxl-5 row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-4">
+                <div className="row row-cols-xxxl-6 row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-4">
                     <div className="col">
                         <div className="card shadow-none border bg-gradient-start-1">
                             <div className="card-body p-20">
@@ -146,6 +146,34 @@ const Metrics = () => {
                                         +$5,000
                                     </span>
                                     {" "} Last 30 days expense
+                                </p>
+                            </div>
+                        </div>
+                        {/* card end */}
+                    </div>
+                    <div className="col">
+                        <div className="card shadow-none border bg-gradient-start-4">
+                            <div className="card-body p-20">
+                                <div className="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                    <div>
+                                        <p className="fw-medium text-primary-light mb-1">
+                                            AI Requests
+                                        </p>
+                                        <h6 className="mb-0">8,500</h6>
+                                    </div>
+                                    <div className="w-50-px h-50-px bg-primary rounded-circle d-flex justify-content-center align-items-center">
+                                        <Icon
+                                            icon="mdi:robot"
+                                            className="text-base text-2xl mb-0"
+                                        />
+                                    </div>
+                                </div>
+                                <p className="fw-medium text-sm text-primary-light mt-12 mb-0">
+                                    <span className="text-success-main">
+                                        <Icon icon="bxs:up-arrow" className="text-xs d-block" />
+                                        +1,200
+                                    </span>
+                                    {" "} Last 30 days AI requests
                                 </p>
                             </div>
                         </div>
@@ -400,7 +428,7 @@ const Metrics = () => {
                 </div>
                 {/* Crypto Home Widgets Start */}
                 <div className="mt-24">
-                    <div className="row row-cols-xxxl-5 row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-4">
+                    <div className="row row-cols-xxxl-6 row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-4">
                         <div className="col">
                             <div className="card shadow-none border bg-gradient-end-3">
                                 <div className="card-body p-20">
@@ -546,6 +574,37 @@ const Metrics = () => {
                                         >
                                             {/* pass the color value */}
                                             {createChatEleven("#C2A633")}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card shadow-none border bg-gradient-end-4">
+                                <div className="card-body p-20">
+                                    <div className="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                        <div className="w-40-px h-40-px bg-primary rounded-circle d-flex justify-content-center align-items-center flex-shrink-0">
+                                            <Icon
+                                                icon="mdi:rocket-launch"
+                                                className="text-white text-xl"
+                                            />
+                                        </div>
+                                        <div className="flex-grow-1">
+                                            <h6 className="text-xl mb-1">SpaceCoin</h6>
+                                            <p className="fw-medium text-secondary-light mb-0">SPACE</p>
+                                        </div>
+                                    </div>
+                                    <div className="mt-3 d-flex flex-wrap justify-content-between align-items-center gap-1">
+                                        <div className="">
+                                            <h6 className="mb-8">$12,450</h6>
+                                            <span className="text-success-main text-md">+ 35%</span>
+                                        </div>
+                                        <div
+                                            id="spacecoinAreaChart"
+                                            className="remove-tooltip-title rounded-tooltip-value"
+                                        >
+                                            {/* pass the color value */}
+                                            {createChatEleven("#6C5CE7")}
                                         </div>
                                     </div>
                                 </div>

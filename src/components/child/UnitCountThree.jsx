@@ -4,7 +4,7 @@ import useReactApexChart from '../../hook/useReactApexChart'
 const UnitCountThree = () => {
     let { createChartThree } = useReactApexChart()
     return (
-        <div className=" row row-cols-xxxl-5 row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-4">
+        <div className=" row row-cols-xxxl-6 row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-4">
             <div className="col">
                 <div className="card shadow-none border bg-gradient-end-3">
                     <div className="card-body p-20">
@@ -150,6 +150,34 @@ const UnitCountThree = () => {
                             >
                                 {/* Pass the color value here */}
                                 {createChartThree('#C2A633')}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="col">
+                <div className="card shadow-none border bg-gradient-end-4">
+                    <div className="card-body p-20">
+                        <div className="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                            <div className="w-40-px h-40-px bg-primary rounded-circle d-flex justify-content-center align-items-center flex-shrink-0">
+                                <i className="ri-rocket-line text-white text-xl"></i>
+                            </div>
+                            <div className="flex-grow-1">
+                                <h6 className="text-xl mb-1">SpaceCoin</h6>
+                                <p className="fw-medium text-secondary-light mb-0">SPACE</p>
+                            </div>
+                        </div>
+                        <div className="mt-3 d-flex flex-wrap justify-content-between align-items-center gap-1">
+                            <div className="">
+                                <h6 className="mb-8">$12,450</h6>
+                                <span className="text-success-main text-md">+ 35%</span>
+                            </div>
+                            <div
+                                id="spacecoinAreaChart"
+                                className="remove-tooltip-title rounded-tooltip-value"
+                            >
+                                {/* Pass the color value here */}
+                                {createChartThree('#6C5CE7')}
                             </div>
                         </div>
                     </div>
